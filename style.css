@@ -7,30 +7,36 @@
     background-image: linear-gradient( to bottom, rgb(49, 205, 219)50%, rgb(255, 255, 255) );
     color: black;
     border-color: black;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: rgb(49, 27, 102) 5px 3px 0px;
     border-style: solid;
 }
 .button:hover{
     background-image: linear-gradient(to bottom, rgb(255, 255, 255)50%,  rgb(49, 205, 219) );
 }
-#buttoms{
+#buttons{
+    width: 280px;
     text-align: center;
-    padding-left: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #container{
     width: 320px;
-    height: 425px;
-    margin-top: 90px;
+    height: 500px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     display: block;
-    border-radius: 15px;
+    border-radius: 10px;
     background-image: linear-gradient( 135deg, rgb(5, 226, 241), rgb(141, 18, 121) );
     border-color: black;
     border-style: solid;
     box-shadow: rgb(190, 183, 183) 5px 3px 10px;
 }
 #view{
+    cursor: text;
     text-align: right;
     margin-left: 25px;
     background-image: linear-gradient( to bottom, rgb(194, 163, 163), rgb(255, 255, 255)50% );
@@ -38,11 +44,12 @@
     font-size: 30px;
     margin-top: 25px;
     width: 262px;
-    height: 65px;
+    height: 75px;
     color: black;
-    border-radius: 15px;
+    border-radius: 10px;
     border-color: black;
     border-style: solid;
     box-shadow: rgb(49, 27, 102) 5px 3px 0px;
+    position: relative;
     overflow: hidden;
 }

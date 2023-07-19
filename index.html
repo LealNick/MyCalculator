@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <title>My Calculator</title>
@@ -7,15 +7,20 @@
         <script src="script.js"></script>
     </head>
     <body background="images/background.jpg">
-    <center>
         <div id="container">
             <p id="view"></p>
-            <div id="buttoms">
+            <div id="buttons">
                 <table>
                     <tr>
-                        <td><button class="button" onclick="insert('1')">1</button></td>
-                        <td><button class="button" onclick="insert('2')">2</button></td>
-                        <td><button class="button" onclick="insert('3')">3</button></td>
+                        <td><button class="button" onclick="clean()">C</button></td>
+                        <td><button class="button" onclick="back()">&lt;</button></td>
+                        <td><button class="button" onclick="insert('/')">&divide;</button></td>
+                        <td><button class="button" onclick="insert('*')">&times;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="button" onclick="insert('7')">7</button></td>
+                        <td><button class="button" onclick="insert('8')">8</button></td>
+                        <td><button class="button" onclick="insert('9')">9</button></td>
                         <td><button class="button" onclick="insert('+')">&plus;</button></td>
                     </tr>
 
@@ -27,21 +32,18 @@
                     </tr>
 
                     <tr>
-                        <td><button class="button" onclick="insert('7')">7</button></td>
-                        <td><button class="button" onclick="insert('8')">8</button></td>
-                        <td><button class="button" onclick="insert('9')">9</button></td>
-                        <td><button class="button" onclick="insert('/')">/</button></td>
+                        <td><button class="button" onclick="insert('1')">1</button></td>
+                        <td><button class="button" onclick="insert('2')">2</button></td>
+                        <td><button class="button" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button class="button" style="height: 135px;" onclick="calculate()">=</button></td>
                     </tr>
 
                     <tr>
-                        <td><button class="button" onclick="clean('')">C</button></td>
-                        <td><button class="button" onclick="insert('0')">0</button></td>
-                        <td><button class="button" onclick="calculate('')">=</button></td>
-                        <td><button class="button" onclick="insert('*')">*</button></td>
+                        <td colspan="2"><button class="button" style="width: 135px;" onclick="insert('0')">0</button></td>
+                        <td><button class="button" onclick="insert('.')">.</button></td>
                     </tr>
                 </table>
             </div>
         </div>
-    </center>
     </body>
 </html>
